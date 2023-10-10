@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="64" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="HactivTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YX-bb-aZN">
+                        <rect key="frame" x="2" y="2" width="327" height="85"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:69" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEU-du-axv">
+                                <rect key="frame" x="8" y="4" width="52.5" height="73"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" name="TimerBg"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fcM-uN-NaG">
+                                <rect key="frame" x="127" y="4" width="196" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Study Maths" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OHF-sb-cnD">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="38.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I need to at least give one hour per day " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="zgc-Er-fMZ">
+                                        <rect key="frame" x="0.0" y="38.5" width="196" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-rx-GBo">
+                                <rect key="frame" x="64.5" y="4" width="58.5" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👨🏽‍💻" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJs-BI-P4W">
+                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lig-0g-BDI">
+                                        <rect key="frame" x="0.0" y="43.5" width="58.5" height="33.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Category" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fcM-uN-NaG" secondAttribute="bottom" constant="4" id="0qb-V6-fxs"/>
+                            <constraint firstAttribute="trailing" secondItem="fcM-uN-NaG" secondAttribute="trailing" constant="4" id="1OU-jn-TNt"/>
+                            <constraint firstItem="2CH-rx-GBo" firstAttribute="leading" secondItem="lEU-du-axv" secondAttribute="trailing" constant="4" id="85q-Qf-4yW"/>
+                            <constraint firstItem="lEU-du-axv" firstAttribute="top" secondItem="9YX-bb-aZN" secondAttribute="top" constant="4" id="ByZ-sU-OzD"/>
+                            <constraint firstAttribute="bottom" secondItem="lEU-du-axv" secondAttribute="bottom" constant="4" id="DHb-QO-Diy"/>
+                            <constraint firstItem="lEU-du-axv" firstAttribute="width" secondItem="9YX-bb-aZN" secondAttribute="width" multiplier="0.16" id="HQE-S3-4bi"/>
+                            <constraint firstItem="2CH-rx-GBo" firstAttribute="width" secondItem="9YX-bb-aZN" secondAttribute="width" multiplier="0.178899" id="Jyp-UJ-hte"/>
+                            <constraint firstItem="lEU-du-axv" firstAttribute="height" secondItem="9YX-bb-aZN" secondAttribute="height" multiplier="0.857143" id="N90-qj-4kt"/>
+                            <constraint firstItem="lEU-du-axv" firstAttribute="leading" secondItem="9YX-bb-aZN" secondAttribute="leading" priority="750" constant="4" id="QZY-vt-S11"/>
+                            <constraint firstItem="fcM-uN-NaG" firstAttribute="leading" secondItem="2CH-rx-GBo" secondAttribute="trailing" constant="4" id="TMK-c1-1ZY"/>
+                            <constraint firstItem="2CH-rx-GBo" firstAttribute="top" secondItem="9YX-bb-aZN" secondAttribute="top" constant="4" id="WvG-je-GI9"/>
+                            <constraint firstAttribute="bottom" secondItem="2CH-rx-GBo" secondAttribute="bottom" constant="4" id="ekF-Zf-FdK"/>
+                            <constraint firstItem="fcM-uN-NaG" firstAttribute="width" secondItem="9YX-bb-aZN" secondAttribute="width" multiplier="0.6" id="gWY-A8-7wj"/>
+                            <constraint firstItem="fcM-uN-NaG" firstAttribute="top" secondItem="9YX-bb-aZN" secondAttribute="top" constant="4" id="hP8-Yd-jj2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9YX-bb-aZN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="3Qi-H1-J6N"/>
+                    <constraint firstAttribute="trailing" secondItem="9YX-bb-aZN" secondAttribute="trailing" constant="2" id="95l-SY-SVz"/>
+                    <constraint firstAttribute="bottom" secondItem="9YX-bb-aZN" secondAttribute="bottom" constant="2" id="cLm-Se-y0T"/>
+                    <constraint firstItem="9YX-bb-aZN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="fY4-tW-sLP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="timer" destination="lEU-du-axv" id="3Ny-o3-vHy"/>
+                <outlet property="timerCategoryButton" destination="Lig-0g-BDI" id="bPc-6S-wsc"/>
+                <outlet property="timerImage" destination="ZJs-BI-P4W" id="dIy-Ca-TzG"/>
+                <outlet property="timerNotes" destination="zgc-Er-fMZ" id="3xg-WR-yqX"/>
+                <outlet property="timerTitle" destination="OHF-sb-cnD" id="MXb-dd-877"/>
+            </connections>
+            <point key="canvasLocation" x="-7.0370370370370363" y="-12.222222222222221"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TimerBg">
+            <color red="0.89999997615814209" green="0.31000000238418579" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
